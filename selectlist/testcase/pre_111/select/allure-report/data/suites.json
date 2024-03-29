@@ -1,0 +1,56 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "selectpost_111",
+    "children" : [ {
+      "name" : "Testazcs",
+      "children" : [ {
+        "name" : "预算单位：agency",
+        "uid" : "4c04633692fffe89",
+        "parentUid" : "21b295998b33c0b872513ad135e7ea9f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1711438115417,
+          "stop" : 1711438115881,
+          "duration" : 464
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "21b295998b33c0b872513ad135e7ea9f"
+    }, {
+      "name" : "Testplan",
+      "children" : [ {
+        "name" : "额度列表：planbgtbalance",
+        "uid" : "238d9aac88551f05",
+        "parentUid" : "23dc40f583498db8776343ce5ddb3769",
+        "status" : "passed",
+        "time" : {
+          "start" : 1711438115918,
+          "stop" : 1711438116717,
+          "duration" : 799
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TAB页签数量：datastatuscount",
+        "uid" : "2b34704415db82d1",
+        "parentUid" : "23dc40f583498db8776343ce5ddb3769",
+        "status" : "passed",
+        "time" : {
+          "start" : 1711438116839,
+          "stop" : 1711438117615,
+          "duration" : 776
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "23dc40f583498db8776343ce5ddb3769"
+    } ],
+    "uid" : "6d2777d03ad4f952d0c686d43a6bd904"
+  } ]
+}

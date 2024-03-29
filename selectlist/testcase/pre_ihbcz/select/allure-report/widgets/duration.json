@@ -1,0 +1,31 @@
+[ {
+  "uid" : "6664173546b22165",
+  "name" : "额度列表：planbgtbalance",
+  "time" : {
+    "start" : 1711441003685,
+    "stop" : 1711441003809,
+    "duration" : 124
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cfa7e0cf653ffe20",
+  "name" : "TAB页签数量：datastatuscount",
+  "time" : {
+    "start" : 1711441003864,
+    "stop" : 1711441004348,
+    "duration" : 484
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a9d0e4d63c610a1a",
+  "name" : "预算单位：agency",
+  "time" : {
+    "start" : 1711441003341,
+    "stop" : 1711441003601,
+    "duration" : 260
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

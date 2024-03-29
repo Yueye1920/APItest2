@@ -1,0 +1,48 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "selectpost_111",
+    "children" : [ {
+      "name" : "预算单位：agency",
+      "uid" : "4c04633692fffe89",
+      "parentUid" : "1caf8b1a54b2ef37773c6206d22fa012",
+      "status" : "passed",
+      "time" : {
+        "start" : 1711438115417,
+        "stop" : 1711438115881,
+        "duration" : 464
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "额度列表：planbgtbalance",
+      "uid" : "238d9aac88551f05",
+      "parentUid" : "1caf8b1a54b2ef37773c6206d22fa012",
+      "status" : "passed",
+      "time" : {
+        "start" : 1711438115918,
+        "stop" : 1711438116717,
+        "duration" : 799
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "TAB页签数量：datastatuscount",
+      "uid" : "2b34704415db82d1",
+      "parentUid" : "1caf8b1a54b2ef37773c6206d22fa012",
+      "status" : "passed",
+      "time" : {
+        "start" : 1711438116839,
+        "stop" : 1711438117615,
+        "duration" : 776
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "1caf8b1a54b2ef37773c6206d22fa012"
+  } ]
+}

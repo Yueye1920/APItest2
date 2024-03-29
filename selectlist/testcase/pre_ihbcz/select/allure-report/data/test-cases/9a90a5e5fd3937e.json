@@ -1,0 +1,85 @@
+{
+  "uid" : "9a90a5e5fd3937e",
+  "name" : "额度列表：planbgtbalance",
+  "fullName" : "selectpost_ihbcz.Testplan#testplanYkjhlrdwPlanbgtbalance",
+  "historyId" : "887c7487a77984cb0e20abfcd290b5c6",
+  "time" : {
+    "start" : 1711440067150,
+    "stop" : 1711440067269,
+    "duration" : 119
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "f46ba24c024be472",
+      "name" : "log",
+      "source" : "f46ba24c024be472.txt",
+      "type" : "text/plain",
+      "size" : 22565
+    }, {
+      "uid" : "5d3b764857b0ed39",
+      "name" : "stdout",
+      "source" : "5d3b764857b0ed39.txt",
+      "type" : "text/plain",
+      "size" : 42
+    }, {
+      "uid" : "e66fb5426b32037",
+      "name" : "stderr",
+      "source" : "e66fb5426b32037.txt",
+      "type" : "text/plain",
+      "size" : 22614
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 3,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "用款计划模块"
+  }, {
+    "name" : "story",
+    "value" : "用款计划录入（单位）"
+  }, {
+    "name" : "suite",
+    "value" : "selectpost_ihbcz"
+  }, {
+    "name" : "subSuite",
+    "value" : "Testplan"
+  }, {
+    "name" : "host",
+    "value" : "WIN-Q4LBVBF2PED"
+  }, {
+    "name" : "thread",
+    "value" : "3184-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "selectpost_ihbcz"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9a90a5e5fd3937e.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,87 @@
+{
+  "uid" : "2b34704415db82d1",
+  "name" : "TAB页签数量：datastatuscount",
+  "fullName" : "selectpost_111.Testplan#testplanYkjhlrdwDatastatuscount",
+  "historyId" : "eef9298e77f932d3785cafb2fc563869",
+  "time" : {
+    "start" : 1711438116839,
+    "stop" : 1711438117615,
+    "duration" : 776
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "82110f8bb4ca5a00",
+      "name" : "log",
+      "source" : "82110f8bb4ca5a00.txt",
+      "type" : "text/plain",
+      "size" : 756
+    }, {
+      "uid" : "5fe91fdd8a6157a6",
+      "name" : "stdout",
+      "source" : "5fe91fdd8a6157a6.txt",
+      "type" : "text/plain",
+      "size" : 41
+    }, {
+      "uid" : "6e5e0bdd09e35389",
+      "name" : "stderr",
+      "source" : "6e5e0bdd09e35389.txt",
+      "type" : "text/plain",
+      "size" : 805
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "用款计划录入（单位）"
+  }, {
+    "name" : "feature",
+    "value" : "用款计划模块"
+  }, {
+    "name" : "suite",
+    "value" : "selectpost_111"
+  }, {
+    "name" : "subSuite",
+    "value" : "Testplan"
+  }, {
+    "name" : "host",
+    "value" : "WIN-Q4LBVBF2PED"
+  }, {
+    "name" : "thread",
+    "value" : "3620-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "selectpost_111"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2b34704415db82d1.json",
+  "parameterValues" : [ ]
+}

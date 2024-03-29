@@ -1,0 +1,70 @@
+2024-03-25 08:44:21,797 - DEBUG: debug message
+2024-03-25 08:44:21,891 - INFO: info message
+2024-03-25 08:44:21,891 - WARNING: debug message
+2024-03-25 08:44:21,892 - ERROR: debug message
+2024-03-25 08:44:21,892 - CRITICAL: debug message
+2024-03-25 08:45:10,700 - DEBUG: this is a debug message
+2024-03-25 08:45:10,702 - INFO: info message
+2024-03-25 08:45:10,702 - WARNING: debug message
+2024-03-25 08:45:10,704 - ERROR: debug message
+2024-03-25 08:45:10,705 - CRITICAL: debug message
+2024-03-25 08:45:39,600 - DEBUG: this is a debug message
+2024-03-25 08:45:39,617 - INFO: this is ainfo message
+2024-03-25 08:45:39,618 - WARNING: this is a warning message
+2024-03-25 08:45:39,618 - ERROR: this is a error message
+2024-03-25 08:45:39,619 - CRITICAL: this is a critical message
+2024-03-25 08:52:21,712 - DEBUG: this is a debug message
+2024-03-25 08:52:21,713 - INFO: this is a info message
+2024-03-25 08:52:21,714 - WARNING: this is a warning message
+2024-03-25 08:52:21,714 - ERROR: this is a error message
+2024-03-25 08:52:21,715 - CRITICAL: this is a critical message
+2024-03-25 09:36:23,979 - DEBUG: this is a debug message
+2024-03-25 09:36:24,057 - INFO: this is a info message
+2024-03-25 09:36:24,057 - WARNING: this is a warning message
+2024-03-25 09:36:24,057 - ERROR: this is a error message
+2024-03-25 09:36:24,057 - CRITICAL: this is a critical message
+2024-03-25 09:40:27,514 - DEBUG: this is a debug message
+2024-03-25 09:40:27,514 - INFO: this is a info message
+2024-03-25 09:40:27,514 - WARNING: this is a warning message
+2024-03-25 09:40:27,514 - ERROR: this is a error message
+2024-03-25 09:40:27,514 - CRITICAL: this is a critical message
+2024-03-25 09:49:28,694 - DEBUG: this is a debug message
+2024-03-25 09:49:28,694 - INFO: this is a info message
+2024-03-25 09:49:28,694 - WARNING: this is a warning message
+2024-03-25 09:49:28,694 - ERROR: this is a error message
+2024-03-25 09:49:28,694 - CRITICAL: this is a critical message
+2024-03-25 10:31:31,149 - DEBUG: this is a debug message
+2024-03-25 10:31:31,165 - INFO: this is a info message
+2024-03-25 10:31:31,165 - WARNING: this is a warning message
+2024-03-25 10:31:31,165 - ERROR: this is a error message
+2024-03-25 10:31:31,165 - CRITICAL: this is a critical message
+2024-03-25 10:41:10,748 - DEBUG: this is a debug message
+2024-03-25 10:41:10,748 - INFO: this is a info message
+2024-03-25 10:41:10,749 - WARNING: this is a warning message
+2024-03-25 10:41:10,749 - ERROR: this is a error message
+2024-03-25 10:41:10,749 - CRITICAL: this is a critical message
+2024-03-25 11:03:53,654 - DEBUG: this is a debug message
+2024-03-25 11:03:53,655 - INFO: this is a info message
+2024-03-25 11:03:53,655 - WARNING: this is a warning message
+2024-03-25 11:03:53,655 - ERROR: this is a error message
+2024-03-25 11:03:53,655 - CRITICAL: this is a critical message
+2024-03-25 11:33:09,767 - DEBUG: this is a debug message
+2024-03-25 11:33:09,768 - INFO: this is a info message
+2024-03-25 11:33:09,768 - WARNING: this is a warning message
+2024-03-25 11:33:09,768 - ERROR: this is a error message
+2024-03-25 11:33:09,768 - CRITICAL: this is a critical message
+2024-03-25 11:35:13,490 - DEBUG: this is a debug message
+2024-03-25 11:35:13,491 - INFO: this is a info message
+2024-03-25 11:35:13,491 - WARNING: this is a warning message
+2024-03-25 11:35:13,491 - ERROR: this is a error message
+2024-03-25 11:35:13,491 - CRITICAL: this is a critical message
+2024-03-25 11:52:31,817 - DEBUG: this is a debug message
+2024-03-25 11:52:31,818 - INFO: this is a info message
+2024-03-25 11:52:31,818 - WARNING: this is a warning message
+2024-03-25 11:52:31,818 - ERROR: this is a error message
+2024-03-25 11:52:31,819 - CRITICAL: this is a critical message
+2024-03-25 11:54:20,906 - DEBUG: this is a debug message
+2024-03-25 11:54:20,906 - INFO: this is a info message
+2024-03-25 11:54:20,906 - WARNING: this is a warning message
+2024-03-25 11:54:20,906 - ERROR: this is a error message
+2024-03-25 11:54:20,907 - CRITICAL: this is a critical message

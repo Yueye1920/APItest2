@@ -1,0 +1,87 @@
+{
+  "uid" : "659f132a241f2c0d",
+  "name" : "预算单位：agency",
+  "fullName" : "selectpost_111.Testazcs#testagency",
+  "historyId" : "27fa65ad7539c6e01f0d0fe66bec7eec",
+  "time" : {
+    "start" : 1711438115417,
+    "stop" : 1711438115881,
+    "duration" : 464
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "a8dd3d7e3b390a5d",
+      "name" : "log",
+      "source" : "a8dd3d7e3b390a5d.txt",
+      "type" : "text/plain",
+      "size" : 466188
+    }, {
+      "uid" : "e86e07bf08aa9247",
+      "name" : "stdout",
+      "source" : "e86e07bf08aa9247.txt",
+      "type" : "text/plain",
+      "size" : 41
+    }, {
+      "uid" : "37fa5b6ab49c943a",
+      "name" : "stderr",
+      "source" : "37fa5b6ab49c943a.txt",
+      "type" : "text/plain",
+      "size" : 466237
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 3
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "左侧树"
+  }, {
+    "name" : "story",
+    "value" : "预算单位"
+  }, {
+    "name" : "suite",
+    "value" : "selectpost_111"
+  }, {
+    "name" : "subSuite",
+    "value" : "Testazcs"
+  }, {
+    "name" : "host",
+    "value" : "WIN-Q4LBVBF2PED"
+  }, {
+    "name" : "thread",
+    "value" : "3620-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "selectpost_111"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "659f132a241f2c0d.json",
+  "parameterValues" : [ ]
+}

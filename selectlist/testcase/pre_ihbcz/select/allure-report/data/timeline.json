@@ -1,0 +1,95 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "WIN-Q4LBVBF2PED",
+    "children" : [ {
+      "name" : "7384-MainThread",
+      "children" : [ {
+        "name" : "TAB页签数量：datastatuscount",
+        "uid" : "cfa7e0cf653ffe20",
+        "parentUid" : "15a806bcb73db375f24f527437432801",
+        "status" : "passed",
+        "time" : {
+          "start" : 1711441003864,
+          "stop" : 1711441004348,
+          "duration" : 484
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "预算单位：agency",
+        "uid" : "a9d0e4d63c610a1a",
+        "parentUid" : "15a806bcb73db375f24f527437432801",
+        "status" : "passed",
+        "time" : {
+          "start" : 1711441003341,
+          "stop" : 1711441003601,
+          "duration" : 260
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "额度列表：planbgtbalance",
+        "uid" : "6664173546b22165",
+        "parentUid" : "15a806bcb73db375f24f527437432801",
+        "status" : "passed",
+        "time" : {
+          "start" : 1711441003685,
+          "stop" : 1711441003809,
+          "duration" : 124
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "15a806bcb73db375f24f527437432801"
+    }, {
+      "name" : "3184-MainThread",
+      "children" : [ {
+        "name" : "额度列表：planbgtbalance",
+        "uid" : "9a90a5e5fd3937e",
+        "parentUid" : "dd26de201a9b7fdc3ce747d21bb24ea1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1711440067150,
+          "stop" : 1711440067269,
+          "duration" : 119
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "预算单位：agency",
+        "uid" : "df7968afc6e17736",
+        "parentUid" : "dd26de201a9b7fdc3ce747d21bb24ea1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1711440066855,
+          "stop" : 1711440067114,
+          "duration" : 259
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TAB页签数量：datastatuscount",
+        "uid" : "764cde3fe257167",
+        "parentUid" : "dd26de201a9b7fdc3ce747d21bb24ea1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1711440067319,
+          "stop" : 1711440067627,
+          "duration" : 308
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "dd26de201a9b7fdc3ce747d21bb24ea1"
+    } ],
+    "uid" : "1de1c6d22536bdd02159bf89e857a11b"
+  } ]
+}

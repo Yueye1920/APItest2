@@ -1,0 +1,87 @@
+{
+  "uid" : "5a32e2e0fb9d0b14",
+  "name" : "额度列表：planbgtbalance",
+  "fullName" : "selectpost_111.Testplan#testplanYkjhlrdwPlanbgtbalance",
+  "historyId" : "76ccc6a0b8f6af7ec5589420cf0f39c5",
+  "time" : {
+    "start" : 1711438115918,
+    "stop" : 1711438116717,
+    "duration" : 799
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "219d34b39940b1fa",
+      "name" : "log",
+      "source" : "219d34b39940b1fa.txt",
+      "type" : "text/plain",
+      "size" : 22322
+    }, {
+      "uid" : "55e0108221aa0241",
+      "name" : "stdout",
+      "source" : "55e0108221aa0241.txt",
+      "type" : "text/plain",
+      "size" : 41
+    }, {
+      "uid" : "6fd1cbcaef57f556",
+      "name" : "stderr",
+      "source" : "6fd1cbcaef57f556.txt",
+      "type" : "text/plain",
+      "size" : 22371
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 3
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "用款计划录入（单位）"
+  }, {
+    "name" : "feature",
+    "value" : "用款计划模块"
+  }, {
+    "name" : "suite",
+    "value" : "selectpost_111"
+  }, {
+    "name" : "subSuite",
+    "value" : "Testplan"
+  }, {
+    "name" : "host",
+    "value" : "WIN-Q4LBVBF2PED"
+  }, {
+    "name" : "thread",
+    "value" : "3620-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "selectpost_111"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5a32e2e0fb9d0b14.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,10 @@
+[ {
+  "name" : "Jenkins",
+  "type" : "jenkins",
+  "url" : "http://localhost:8081/",
+  "buildOrder" : 24,
+  "buildName" : "菜单查询 #24",
+  "buildUrl" : "http://localhost:8081/job/%E8%8F%9C%E5%8D%95%E6%9F%A5%E8%AF%A2/24/",
+  "reportName" : "AllureReport",
+  "reportUrl" : "http://localhost:8081/job/%E8%8F%9C%E5%8D%95%E6%9F%A5%E8%AF%A2/24/allure"
+} ]

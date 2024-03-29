@@ -1,0 +1,52 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "WIN-Q4LBVBF2PED",
+    "children" : [ {
+      "name" : "3620-MainThread",
+      "children" : [ {
+        "name" : "TAB页签数量：datastatuscount",
+        "uid" : "9c43cd833a76ff8e",
+        "parentUid" : "6e92a6d54ed327a4015423248f985468",
+        "status" : "passed",
+        "time" : {
+          "start" : 1711438116839,
+          "stop" : 1711438117615,
+          "duration" : 776
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "额度列表：planbgtbalance",
+        "uid" : "5a32e2e0fb9d0b14",
+        "parentUid" : "6e92a6d54ed327a4015423248f985468",
+        "status" : "passed",
+        "time" : {
+          "start" : 1711438115918,
+          "stop" : 1711438116717,
+          "duration" : 799
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "预算单位：agency",
+        "uid" : "659f132a241f2c0d",
+        "parentUid" : "6e92a6d54ed327a4015423248f985468",
+        "status" : "passed",
+        "time" : {
+          "start" : 1711438115417,
+          "stop" : 1711438115881,
+          "duration" : 464
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6e92a6d54ed327a4015423248f985468"
+    } ],
+    "uid" : "1de1c6d22536bdd02159bf89e857a11b"
+  } ]
+}

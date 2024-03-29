@@ -1,0 +1,95 @@
+{
+  "uid" : "4ae01e62f951de93",
+  "name" : "预算单位：agency",
+  "fullName" : "selectpost_ihbcz.Testazcs#testagency",
+  "historyId" : "5cc6e542308598ebd95dd4c7ea36bd91",
+  "time" : {
+    "start" : 1711441003341,
+    "stop" : 1711441003601,
+    "duration" : 260
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "a9b9893f197f3e00",
+      "name" : "log",
+      "source" : "a9b9893f197f3e00.txt",
+      "type" : "text/plain",
+      "size" : 12460
+    }, {
+      "uid" : "1729ee75e50f8477",
+      "name" : "stdout",
+      "source" : "1729ee75e50f8477.txt",
+      "type" : "text/plain",
+      "size" : 42
+    }, {
+      "uid" : "a864a1eb2054d847",
+      "name" : "stderr",
+      "source" : "a864a1eb2054d847.txt",
+      "type" : "text/plain",
+      "size" : 12509
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "左侧树"
+  }, {
+    "name" : "story",
+    "value" : "预算单位"
+  }, {
+    "name" : "suite",
+    "value" : "selectpost_ihbcz"
+  }, {
+    "name" : "subSuite",
+    "value" : "Testazcs"
+  }, {
+    "name" : "host",
+    "value" : "WIN-Q4LBVBF2PED"
+  }, {
+    "name" : "thread",
+    "value" : "7384-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "selectpost_ihbcz"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "45c373f9ee8681db",
+      "status" : "passed",
+      "time" : {
+        "start" : 1711440066855,
+        "stop" : 1711440067114,
+        "duration" : 259
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4ae01e62f951de93.json",
+  "parameterValues" : [ ]
+}

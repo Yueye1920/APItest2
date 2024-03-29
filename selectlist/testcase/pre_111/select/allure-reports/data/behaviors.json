@@ -1,0 +1,60 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "左侧树",
+    "children" : [ {
+      "name" : "预算单位",
+      "children" : [ {
+        "name" : "预算单位：agency",
+        "uid" : "659f132a241f2c0d",
+        "parentUid" : "531e2cfb75d24b7d075880d990fdf0a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1711438115417,
+          "stop" : 1711438115881,
+          "duration" : 464
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "531e2cfb75d24b7d075880d990fdf0a0"
+    } ],
+    "uid" : "d19f93dc719292fba092cb72a1c81ae1"
+  }, {
+    "name" : "用款计划模块",
+    "children" : [ {
+      "name" : "用款计划录入（单位）",
+      "children" : [ {
+        "name" : "额度列表：planbgtbalance",
+        "uid" : "5a32e2e0fb9d0b14",
+        "parentUid" : "55415aa6a0aa3a386f164fb56eab34c2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1711438115918,
+          "stop" : 1711438116717,
+          "duration" : 799
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TAB页签数量：datastatuscount",
+        "uid" : "9c43cd833a76ff8e",
+        "parentUid" : "55415aa6a0aa3a386f164fb56eab34c2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1711438116839,
+          "stop" : 1711438117615,
+          "duration" : 776
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "55415aa6a0aa3a386f164fb56eab34c2"
+    } ],
+    "uid" : "0357f0b17462482771f7cdae944b38b9"
+  } ]
+}

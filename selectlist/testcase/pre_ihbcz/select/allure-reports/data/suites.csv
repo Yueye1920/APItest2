@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Tue Mar 26 16:16:43 CST 2024","Tue Mar 26 16:16:44 CST 2024","484","","selectpost_ihbcz","Testplan","","","TAB页签数量：datastatuscount",""
+"passed","Tue Mar 26 16:16:43 CST 2024","Tue Mar 26 16:16:43 CST 2024","260","","selectpost_ihbcz","Testazcs","","","预算单位：agency",""
+"passed","Tue Mar 26 16:16:43 CST 2024","Tue Mar 26 16:16:43 CST 2024","124","","selectpost_ihbcz","Testplan","","","额度列表：planbgtbalance",""
