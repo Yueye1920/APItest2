@@ -10,8 +10,8 @@ def get_token():
     login_headers = {"Content-Type": "application/x-www-form-urlencoded"}
 
     login_data = {
-        "username": "VzQyMDAwMDAwMQ==",
-        "password": "Yjg0ZDdmOGQ0ZmE3NzEzZTcwMmFiMGQ5ZDI2MzJkNzU=",
+        "username": "VzQyMDAwMDAxMA==",
+        "password": "ZjY0MmU4NmI3NTg5MDQzYjM0M2U1ZThiYTUxNGNhMDE=",
         "captcha": "MjAyNA=="
     }
     login_res = requests.post(login_url, headers=login_headers, data=login_data)
