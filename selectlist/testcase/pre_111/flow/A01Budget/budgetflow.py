@@ -20,7 +20,7 @@ base_url ='http://10.17.8.111'
 
 @allure.feature('指标管理')
 class Testbudget:
-    @allure.story("指标管理")
+    @allure.story("指标录入")
     @allure.title("指标录入：保存")
     def testZblrCommonSave(self):
         zblr_commonSave_url= base_url + '/payfront/mp-b-budget-service/v1/budget/commonSave'
@@ -184,7 +184,7 @@ class Testbudget:
             logss.logger.error("断言失败：%s",e)
             raise e  # 主动抛出异常，不写则捕获异常
 
-    @allure.story("指标管理")
+    @allure.story("指标录入")
     @allure.title("指标录入：额度列表")
     def testZblrLoadTableDatas(self):
         zblr_loadTableDatas_url = base_url + '/payfront/mp-b-budget-service/v1/budget/loadTableDatas'
@@ -216,10 +216,12 @@ class Testbudget:
             zblr_loadTableDatas_res_time_ms = zblr_loadTableDatas_res_time * 1000
             print("\n")
             print(f"响应时间：{zblr_loadTableDatas_res_time_ms}毫秒")
+            # print(zblr_loadTableDatas_res.text)
 
-            print(zblr_loadTableDatas_res.text)
-            adj_sub_id = zblr_loadTableDatas_res_json.get("data").get("rows")[0]["id"]
-            print("指标id：",adj_sub_id)
+            global zblr_adj_sub_id
+            zblr_adj_sub_id = zblr_loadTableDatas_res_json.get("data").get("rows")[0]["id"]
+            print("指标id：",zblr_adj_sub_id)
+
             logss.logger.info(
                 "请求参数：{}，{}，{}".format(zblr_loadTableDatas_url, zblr_loadTableDatas_data_str,
                                        zblr_loadTableDatas_headers))
@@ -241,8 +243,222 @@ class Testbudget:
             logss.logger.error("断言失败：%s", e)
             raise e  # 主动抛出异常，不写则捕获异常
 
+    @allure.story("指标录入")
+    @allure.title("指标录入：送审")
+    def testZblrCommonoperation(self):
+        zblr_commonoperation_url = base_url + '/payfront/mp-b-budget-service/v1/common/budget/commonoperation'
+        zblr_commonoperation_headers = {"Content-Type": "application/json",
+                                       "tokenid": tokenids}
+        zblr_commonoperation_data = {
+            "data": [
+                zblr_adj_sub_id
+            ],
+            "appid": "budget-total",
+            "menuguid": "BB39585CD1574D94B7D3DB7553930001",
+            "actionType": "2",
+            "glType": "0",
+            "actionName": "送审",
+            "action": "audit",
+            "status": "1"
+        }
 
+        # 将dict转换为str
+        zblr_commonoperation_data_str = json.dumps(zblr_commonoperation_data)
+        try:
+            zblr_commonoperation_start = time.time()  # 开始时间
+            zblr_commonoperation_res = requests.post(zblr_commonoperation_url,
+                                                    headers=zblr_commonoperation_headers,
+                                                    data=zblr_commonoperation_data_str)
+            zblr_commonoperation_res_json = zblr_commonoperation_res.json()
+            zblr_commonoperation_end = time.time()  # 结束时间
+            zblr_commonoperation_res_time = zblr_commonoperation_end - zblr_commonoperation_start
+            zblr_commonoperation_res_time_ms = zblr_commonoperation_res_time * 1000
+            print("\n")
+            print(f"响应时间：{zblr_commonoperation_res_time_ms}毫秒")
+            # print(zblr_commonoperation_res.text)
 
+            logss.logger.info(
+                "请求参数：{}，{}，{}".format(zblr_commonoperation_url, zblr_commonoperation_data_str,
+                                       zblr_commonoperation_headers))
+            logss.logger.info("返回结果：{}".format(zblr_commonoperation_res.text))
+            ###断言
+            response_rscode = zblr_commonoperation_res_json.get('rscode')
+            response_result = zblr_commonoperation_res_json.get('result')
+
+            # pytest.assume(zblr_loadTableDatas_res.status_code == 200)
+            # pytest.assume(response_rscode == 200)
+            # pytest.assume(response_result == "请求成功")
+
+            assert zblr_commonoperation_res.status_code == 200
+            assert response_rscode == 200
+            assert response_result == "请求成功"
+
+        except AssertionError as e:
+            # print(f"请求失败：{e}")
+            logss.logger.error("断言失败：%s", e)
+            raise e  # 主动抛出异常，不写则捕获异常
+
+    @allure.story("业务处室审核")
+    @allure.title("业务处室审核：审核")
+    def testYwcsshCommonoperation(self):
+        ywcssh_commonoperation_url = base_url + '/payfront/mp-b-budget-service/v1/common/budget/commonoperation'
+        ywcssh_commonoperation_headers = {"Content-Type": "application/json",
+                                       "tokenid": tokenids}
+        ywcssh_commonoperation_data = {
+            "data": [
+                zblr_adj_sub_id
+            ],
+            "appid": "budget-total",
+            "menuguid": "BB39585CD1574D94B7D3DB7553930002",
+            "actionType": "2",
+            "glType": "0",
+            "actionName": "审核",
+            "action": "audit"
+        }
+
+        # 将dict转换为str
+        ywcssh_commonoperation_data_str = json.dumps(ywcssh_commonoperation_data)
+        try:
+            ywcssh_commonoperation_start = time.time()  # 开始时间
+            ywcssh_commonoperation_res = requests.post(ywcssh_commonoperation_url,
+                                                    headers=ywcssh_commonoperation_headers,
+                                                    data=ywcssh_commonoperation_data_str)
+            ywcssh_commonoperation_res_json = ywcssh_commonoperation_res.json()
+            ywcssh_commonoperation_end = time.time()  # 结束时间
+            ywcssh_commonoperation_res_time = ywcssh_commonoperation_end - ywcssh_commonoperation_start
+            ywcssh_commonoperation_res_time_ms = ywcssh_commonoperation_res_time * 1000
+            print("\n")
+            print(f"响应时间：{ywcssh_commonoperation_res_time_ms}毫秒")
+            # print(ywcssh_commonoperation_res.text)
+
+            logss.logger.info(
+                "请求参数：{}，{}，{}".format(ywcssh_commonoperation_url, ywcssh_commonoperation_data_str,
+                                       ywcssh_commonoperation_headers))
+            logss.logger.info("返回结果：{}".format(ywcssh_commonoperation_res.text))
+            ###断言
+            response_rscode = ywcssh_commonoperation_res_json.get('rscode')
+            response_result = ywcssh_commonoperation_res_json.get('result')
+
+            # pytest.assume(zblr_loadTableDatas_res.status_code == 200)
+            # pytest.assume(response_rscode == 200)
+            # pytest.assume(response_result == "请求成功")
+
+            assert ywcssh_commonoperation_res.status_code == 200
+            assert response_rscode == 200
+            assert response_result == "请求成功"
+
+        except AssertionError as e:
+            # print(f"请求失败：{e}")
+            logss.logger.error("断言失败：%s", e)
+            raise e  # 主动抛出异常，不写则捕获异常
+
+    @allure.story("指标审核")
+    @allure.title("指标审核：审核")
+    def testZbshCommonoperation(self):
+        zbsh_commonoperation_url = base_url + '/payfront/mp-b-budget-service/v1/common/budget/commonoperation'
+        zbsh_commonoperation_headers = {"Content-Type": "application/json",
+                                          "tokenid": tokenids}
+        zbsh_commonoperation_data = {
+            "data": [
+                zblr_adj_sub_id
+            ],
+            "appid": "budget-total",
+            "menuguid": "BB39585CD1574D94B7D3DB7553930003",
+            "actionType": "2",
+            "glType": "0",
+            "actionName": "审核",
+            "action": "audit"
+        }
+
+        # 将dict转换为str
+        zbsh_commonoperation_data_str = json.dumps(zbsh_commonoperation_data)
+        try:
+            zbsh_commonoperation_start = time.time()  # 开始时间
+            zbsh_commonoperation_res = requests.post(zbsh_commonoperation_url,
+                                                       headers=zbsh_commonoperation_headers,
+                                                       data=zbsh_commonoperation_data_str)
+            zbsh_commonoperation_res_json = zbsh_commonoperation_res.json()
+            zbsh_commonoperation_end = time.time()  # 结束时间
+            zbsh_commonoperation_res_time = zbsh_commonoperation_end - zbsh_commonoperation_start
+            zbsh_commonoperation_res_time_ms = zbsh_commonoperation_res_time * 1000
+            print("\n")
+            print(f"响应时间：{zbsh_commonoperation_res_time_ms}毫秒")
+            # print(zbsh_commonoperation_res.text)
+
+            logss.logger.info(
+                "请求参数：{}，{}，{}".format(zbsh_commonoperation_url, zbsh_commonoperation_data_str,
+                                       zbsh_commonoperation_headers))
+            logss.logger.info("返回结果：{}".format(zbsh_commonoperation_res.text))
+            ###断言
+            response_rscode = zbsh_commonoperation_res_json.get('rscode')
+            response_result = zbsh_commonoperation_res_json.get('result')
+
+            # pytest.assume(zblr_loadTableDatas_res.status_code == 200)
+            # pytest.assume(response_rscode == 200)
+            # pytest.assume(response_result == "请求成功")
+
+            assert zbsh_commonoperation_res.status_code == 200
+            assert response_rscode == 200
+            assert response_result == "请求成功"
+
+        except AssertionError as e:
+            # print(f"请求失败：{e}")
+            logss.logger.error("断言失败：%s", e)
+            raise e  # 主动抛出异常，不写则捕获异常
+
+    @allure.story("指标下达")
+    @allure.title("指标下达：下达")
+    def testZbxdCommonoperation(self):
+        zbxd_commonoperation_url = base_url + '/payfront/mp-b-budget-service/v1/common/budget/commonoperation'
+        zbxd_commonoperation_headers = {"Content-Type": "application/json",
+                                          "tokenid": tokenids}
+        zbxd_commonoperation_data = {
+            "data": [
+                zblr_adj_sub_id
+            ],
+            "appid": "budget-total",
+            "menuguid": "BB39585CD1574D94B7D3DB7553930004",
+            "actionType": "2",
+            "glType": "3",
+            "actionName": "下达",
+            "action": "audit"
+        }
+
+        # 将dict转换为str
+        zbxd_commonoperation_data_str = json.dumps(zbxd_commonoperation_data)
+        try:
+            zbxd_commonoperation_start = time.time()  # 开始时间
+            zbxd_commonoperation_res = requests.post(zbxd_commonoperation_url,
+                                                       headers=zbxd_commonoperation_headers,
+                                                       data=zbxd_commonoperation_data_str)
+            zbxd_commonoperation_res_json = zbxd_commonoperation_res.json()
+            zbxd_commonoperation_end = time.time()  # 结束时间
+            zbxd_commonoperation_res_time = zbxd_commonoperation_end - zbxd_commonoperation_start
+            zbxd_commonoperation_res_time_ms = zbxd_commonoperation_res_time * 1000
+            print("\n")
+            print(f"响应时间：{zbxd_commonoperation_res_time_ms}毫秒")
+            # print(zbxd_commonoperation_res.text)
+
+            logss.logger.info(
+                "请求参数：{}，{}，{}".format(zbxd_commonoperation_url, zbxd_commonoperation_data_str,
+                                       zbxd_commonoperation_headers))
+            logss.logger.info("返回结果：{}".format(zbxd_commonoperation_res.text))
+            ###断言
+            response_rscode = zbxd_commonoperation_res_json.get('rscode')
+            response_result = zbxd_commonoperation_res_json.get('result')
+
+            # pytest.assume(zblr_loadTableDatas_res.status_code == 200)
+            # pytest.assume(response_rscode == 200)
+            # pytest.assume(response_result == "请求成功")
+
+            assert zbxd_commonoperation_res.status_code == 200
+            assert response_rscode == 200
+            assert response_result == "请求成功"
+
+        except AssertionError as e:
+            # print(f"请求失败：{e}")
+            logss.logger.error("断言失败：%s", e)
+            raise e  # 主动抛出异常，不写则捕获异常
 
 
 
